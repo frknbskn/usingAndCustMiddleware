@@ -29,5 +29,10 @@ namespace usingAndCustMiddleware.Controllers
             })
             .ToArray();
         }
+        [HttpPost]
+        public IActionResult SendComment(CommentDetail? commentDetail)
+        {
+            return Ok(commentDetail); 
+        }
     }
 }
